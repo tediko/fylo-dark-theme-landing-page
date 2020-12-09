@@ -9,7 +9,8 @@
         "../sass/utilities/_animations.scss",
         "../sass/base/_reset.scss",
         "../sass/base/_typography.scss",
-        "../sass/components/_buttons.scss"
+        "../sass/components/_buttons.scss",
+        "../sass/layout/_header.scss"
     ],
     "names": [],
     "file": "main.css"
