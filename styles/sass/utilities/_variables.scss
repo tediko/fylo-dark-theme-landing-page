@@ -1,0 +1,25 @@
+/* Backgrounds */
+$bg-intro: hsl(217, 28%, 15%);
+$bg-started: hsl(217, 28%, 15%);
+$bg-main: hsl(218, 28%, 13%);
+$bg-testimonials: hsl(219, 30%, 18%);
+$bg-footer: hsl(216, 53%, 9%);
+
+/* Colors */
+$c-white: hsl(0, 0%, 100%);
+$c-cyan: hsl(176, 68%, 64%);
+$c-blue: hsl(198, 60%, 50%);
+$c-red-light: hsl(0, 100%, 63%);
+$gr-cyan-blue: linear-gradient(to right, $c-cyan 0%, $c-blue 100%);
+
+/* Fonts */
+$ff-primary: 'Open Sans', sans-serif;
+$ff-secondary: 'Raleway', sans-serif;
+
+/* Media queries Breakpoints */
+$breakpoints: (
+    'sm': 481px,
+    'md': 769px,
+    'lg': 1025px
+);
+
