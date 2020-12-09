@@ -1,0 +1,67 @@
+.features {
+    margin-bottom: 150px;
+    
+    &__container {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 85px;
+        margin: 0 29px;
+
+        @include breakpoint('md') {
+            grid-template-columns: repeat(2, 1fr);
+            gap: unset;
+            row-gap: 30px;
+            justify-content: center;
+        }
+        @include breakpoint('lg') {
+            grid-template-columns: repeat(2, 510px);
+            row-gap: 91px;
+            max-width: 1033px;
+            margin: 0 auto;
+            margin-top: 33px;
+            justify-content: unset;
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__card-icon {
+        margin-bottom: 30px;
+        max-height: 82px;
+        height: 100%;
+
+        @include breakpoint('lg') {
+            margin-bottom: 26px;
+        }
+
+        img {
+            width: 78%;
+
+            @include breakpoint('md') {
+                width: 100%;
+            }
+        }
+    }
+
+    &__card-heading {
+        margin-bottom: 10px;
+    }
+
+    &__card-text {
+        max-width: 310px;
+
+        @include breakpoint('md') {
+            max-width: 320px;
+        }
+
+        @include breakpoint('lg') {
+            max-width: 375px;
+        }
+    }
+}
