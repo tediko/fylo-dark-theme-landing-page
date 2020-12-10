@@ -14,6 +14,18 @@
         }
     }
 
+    &--big {
+        font-size: 1.3rem;
+
+        @include breakpoint('md') {
+            font-size: 1.6rem;
+        }
+
+        @include breakpoint('lg') {
+            font-size: 2.9rem;
+        }
+    }
+
     &--md {
         font-size: 1.3rem;
 
@@ -38,5 +50,17 @@
 
     &--sm {
         font-size: 1rem;
+    }
+
+    &--md {
+        font-size: 0.97rem;
+
+        @include breakpoint('md') {   
+            font-size: 1.05rem;
+        }
+
+        @include breakpoint('lg') {
+            font-size: 1.15rem;
+        }
     }
 }
