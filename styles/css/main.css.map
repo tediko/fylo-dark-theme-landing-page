@@ -15,7 +15,8 @@
         "../sass/layout/_kv.scss",
         "../sass/layout/_features.scss",
         "../sass/layout/_about.scss",
-        "../sass/layout/_testimonials.scss"
+        "../sass/layout/_testimonials.scss",
+        "../sass/layout/_footer.scss"
     ],
     "names": [],
     "file": "main.css"
