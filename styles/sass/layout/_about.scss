@@ -1,4 +1,5 @@
 .about {
+    $root : &;
     margin-bottom: 80px;
 
     &__container {
@@ -85,8 +86,9 @@
 
     &__cta {
         position: relative;
+        display: flex;
+        align-items: center;
         align-self: flex-start;
-        padding-right: 20px;
         padding-bottom: 5px;
         border-bottom: 1px solid $c-cyan;
         color: $c-cyan;
@@ -100,17 +102,34 @@
         @include breakpoint('md') {
             margin: unset;
             font-size: 1.05rem;
+            transition: color 250ms ease-in,
+                        border-color 250ms ease-in;
+
+            &:hover {
+                color: $c-white;
+                border-color: $c-white;
+    
+                #{$root}__cta-arrow {
+                    transform-origin: center;
+                    transform: rotate(180deg);
+    
+                    .path2 {
+                        &::before {
+                            color: $c-white;
+                        }
+                    }
+                }
+            }
         }
 
         @include breakpoint('lg') {   
             font-size: 1.17rem;
         }
+    }
 
-        &::before {
-            position: absolute;
-            content: url('../../assets/img/icon-arrow.svg');
-            top: 0;
-            left: 90%;
-        }
+    &__cta-arrow {
+        margin-left: 5px;
+        transition: transform 0.5s;
+        font-size: 1.1rem;
     }
 }
