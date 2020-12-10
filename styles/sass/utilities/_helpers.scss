@@ -33,6 +33,10 @@
             font-size: 1.4rem;
         }
     }
+
+    &--sm {
+        font-size: 0.8rem;
+    }
 }
 
 .text {
@@ -48,19 +52,32 @@
         font-size: 1.44rem;
     }
 
+    &--md {
+        font-size: 0.97rem;
+        
+        @include breakpoint('md') {   
+            font-size: 1.05rem;
+        }
+        
+        @include breakpoint('lg') {
+            font-size: 1.15rem;
+        }
+    }
+
     &--sm {
         font-size: 1rem;
     }
 
-    &--md {
-        font-size: 0.97rem;
+    &--xsm {
+        font-size: 0.8rem;
+        line-height: 1.6;
 
-        @include breakpoint('md') {   
-            font-size: 1.05rem;
+        @include breakpoint('sm') {
+            font-size: 0.95rem;
         }
 
         @include breakpoint('lg') {
-            font-size: 1.15rem;
+            font-size: 1.05rem;
         }
     }
 }
