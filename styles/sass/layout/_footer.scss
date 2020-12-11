@@ -1,0 +1,137 @@
+.footer {
+    background: $bg-footer;
+
+    &__container {
+        padding-top: 201px;
+        padding-bottom: 40px;
+        margin: 0 30px;
+        color: $c-white;
+
+        @include breakpoint('lg') {
+            max-width: 1260px;
+            margin: 0 auto;
+            padding: 201px 30px 40px 30px; 
+        }
+    }
+
+    &__logo {
+        margin-left: 10px;
+        margin-bottom: 38px;
+
+        @include breakpoint('lg') {
+            margin-left: 0;
+            margin-bottom: 26px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-flow: column;
+
+        @include breakpoint('md') {
+            justify-content: space-between;
+            flex-flow: row;
+        }
+    }
+
+    &__contact {
+        margin-bottom: 62px;
+        font-style: normal;
+
+        @include breakpoint('lg') {
+            flex: 2;
+            display: flex;
+            flex-flow: column wrap;
+            height: 100px;
+        }
+    }
+
+    &__contact-item {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-bottom: 23px;
+
+            @include breakpoint('lg') {
+                margin-bottom: 6px;
+            }
+        }
+    }
+
+    &__contact-icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 9px;
+    }
+
+    &__contact-text {
+        font-size: 1.13rem;
+        max-width: 275px;
+
+        @include breakpoint('lg') {
+            max-width: 320px;
+        }
+    }
+
+    &__nav {
+        margin-bottom: 79px;
+
+        @include breakpoint('lg') {
+            flex: 1;
+        }
+    }
+
+    &__nav-list {
+        column-count: 1;
+        list-style: none;
+
+        @include breakpoint('sm') {
+            columns: 2;
+        }
+    }
+
+    &__nav-item {
+        &:not(:last-child) {
+            margin-bottom: 17px;
+        }
+
+        &:nth-child(4) {
+            margin-bottom: 49px;
+        }
+    }
+
+    &__nav-link {
+        color: $c-white;
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
+
+    &__socials {
+        display: flex;
+        align-self: center;
+
+        @include breakpoint('md') {
+            align-self: unset;
+        }
+
+        @include breakpoint('lg') {
+            flex: 0 0 120px;
+        }
+    }
+
+    &__socials-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        color: $c-white;
+        border: 1px solid $c-white;
+        border-radius: 50%;
+        text-decoration: none;
+
+        &:not(:last-child) {
+            margin-right: 11px;
+        }
+    }
+}

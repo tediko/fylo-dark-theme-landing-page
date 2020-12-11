@@ -694,7 +694,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .testimonials {
-  margin-bottom: 280px;
+  margin-bottom: 356px;
 }
 
 .testimonials__container {
@@ -770,5 +770,161 @@ h1, h2, h3, h4, h5, h6 {
 .testimonials__card-desc {
   color: white;
   font-size: 0.7rem;
+}
+
+.footer {
+  background: #0b1523;
+}
+
+.footer__container {
+  padding-top: 201px;
+  padding-bottom: 40px;
+  margin: 0 30px;
+  color: white;
+}
+
+@media (min-width: 1025px) {
+  .footer__container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 201px 30px 40px 30px;
+  }
+}
+
+.footer__logo {
+  margin-left: 10px;
+  margin-bottom: 38px;
+}
+
+@media (min-width: 1025px) {
+  .footer__logo {
+    margin-left: 0;
+    margin-bottom: 26px;
+  }
+}
+
+.footer__content {
+  display: flex;
+  flex-flow: column;
+}
+
+@media (min-width: 769px) {
+  .footer__content {
+    justify-content: space-between;
+    flex-flow: row;
+  }
+}
+
+.footer__contact {
+  margin-bottom: 62px;
+  font-style: normal;
+}
+
+@media (min-width: 1025px) {
+  .footer__contact {
+    flex: 2;
+    display: flex;
+    flex-flow: column wrap;
+    height: 100px;
+  }
+}
+
+.footer__contact-item {
+  display: flex;
+}
+
+.footer__contact-item:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+@media (min-width: 1025px) {
+  .footer__contact-item:not(:last-child) {
+    margin-bottom: 6px;
+  }
+}
+
+.footer__contact-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 9px;
+}
+
+.footer__contact-text {
+  font-size: 1.13rem;
+  max-width: 275px;
+}
+
+@media (min-width: 1025px) {
+  .footer__contact-text {
+    max-width: 320px;
+  }
+}
+
+.footer__nav {
+  margin-bottom: 79px;
+}
+
+@media (min-width: 1025px) {
+  .footer__nav {
+    flex: 1;
+  }
+}
+
+.footer__nav-list {
+  column-count: 1;
+  list-style: none;
+}
+
+@media (min-width: 481px) {
+  .footer__nav-list {
+    columns: 2;
+  }
+}
+
+.footer__nav-item:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.footer__nav-item:nth-child(4) {
+  margin-bottom: 49px;
+}
+
+.footer__nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.footer__socials {
+  display: flex;
+  align-self: center;
+}
+
+@media (min-width: 769px) {
+  .footer__socials {
+    align-self: unset;
+  }
+}
+
+@media (min-width: 1025px) {
+  .footer__socials {
+    flex: 0 0 120px;
+  }
+}
+
+.footer__socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.footer__socials-link:not(:last-child) {
+  margin-right: 11px;
 }
 /*# sourceMappingURL=main.css.map */
