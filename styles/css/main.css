@@ -680,6 +680,14 @@ a:focus, input:focus, button:focus {
   margin-bottom: 180px;
 }
 
+.about.active .about__hero {
+  animation: slide-left 1000ms ease-in-out forwards;
+}
+
+.about.active .about__content {
+  animation: slide-right 1000ms ease-in-out forwards;
+}
+
 .about__container {
   display: flex;
   flex-flow: column;
@@ -702,6 +710,7 @@ a:focus, input:focus, button:focus {
 .about__hero {
   margin-bottom: 38px;
   align-self: center;
+  opacity: 0;
 }
 
 @media (min-width: 769px) {
@@ -724,6 +733,7 @@ a:focus, input:focus, button:focus {
 .about__content {
   display: flex;
   flex-flow: column;
+  opacity: 0;
 }
 
 @media (min-width: 769px) {

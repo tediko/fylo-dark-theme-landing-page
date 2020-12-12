@@ -2,6 +2,16 @@
     $root : &;
     margin-bottom: 180px;
 
+    &.active {
+        #{$root}__hero {
+            animation: slide-left 1000ms ease-in-out forwards;
+        }
+
+        #{$root}__content {
+            animation: slide-right 1000ms ease-in-out forwards;
+        }
+    }
+
     &__container {
         display: flex;
         flex-flow: column;
@@ -20,6 +30,7 @@
     &__hero {
         margin-bottom: 38px;
         align-self: center;
+        opacity: 0;
 
         @include breakpoint('md') {
             margin-bottom: 0;
@@ -38,6 +49,7 @@
     &__content {
         display: flex;
         flex-flow: column;
+        opacity: 0;
 
         @include breakpoint('md') {
             justify-content: center;
