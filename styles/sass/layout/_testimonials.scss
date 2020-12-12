@@ -42,7 +42,7 @@
         padding: 28px 21px;
         box-shadow: 5px 5px 13px rgba(255, 255, 255, 0.04);
         border-radius: 6px;
-        /* opacity: 0; */
+        opacity: 0;
 
         @include breakpoint('lg') {
             padding: 30px 21px;
