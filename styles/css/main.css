@@ -929,6 +929,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #cccccc;
 }
 
+.footer__start-input:invalid {
+  border: none;
+  box-shadow: none;
+}
+
 .footer__start-error {
   position: absolute;
   visibility: hidden;
