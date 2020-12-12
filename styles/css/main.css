@@ -111,6 +111,18 @@
   }
 }
 
+@keyframes socials-shake {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
 @font-face {
   font-family: 'icomoon';
   src: url("../../assets/fonts/icomoon.eot?f5idrr");
@@ -893,6 +905,11 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   text-decoration: none;
   font-size: 1.1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__nav-link:hover {
+  text-shadow: 0 0 0.9px white, 0 0 0.9px white, 0 0 0.9px white;
 }
 
 .footer__socials {
@@ -922,9 +939,16 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid white;
   border-radius: 50%;
   text-decoration: none;
+  transition: border-color 250ms ease-in, color 250ms ease-in;
 }
 
 .footer__socials-link:not(:last-child) {
   margin-right: 11px;
+}
+
+.footer__socials-link:hover {
+  animation: socials-shake 300ms ease-in;
+  border-color: #65e2d9;
+  color: #65e2d9;
 }
 /*# sourceMappingURL=main.css.map */

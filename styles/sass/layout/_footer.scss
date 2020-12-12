@@ -104,6 +104,11 @@
         color: $c-white;
         text-decoration: none;
         font-size: 1.1rem;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            text-shadow: 0 0 0.9px $c-white, 0 0 0.9px $c-white, 0 0 0.9px $c-white;
+        }
     }
 
     &__socials {
@@ -129,9 +134,17 @@
         border: 1px solid $c-white;
         border-radius: 50%;
         text-decoration: none;
+        transition: border-color 250ms ease-in,
+                    color 250ms ease-in;
 
         &:not(:last-child) {
             margin-right: 11px;
+        }
+
+        &:hover {
+            animation: socials-shake 300ms ease-in;
+            border-color: $c-cyan;
+            color: $c-cyan;
         }
     }
 }
