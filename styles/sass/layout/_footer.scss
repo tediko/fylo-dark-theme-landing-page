@@ -6,7 +6,9 @@
     &__start {
         position: absolute;
         top: -208px;
-        margin: 0 30px;
+        left: 50%;
+        transform: translate(-50%);
+        width: calc(100% - 30px);
         padding: 46px 25px;
         border-radius: 10px;
         background: $bg-started;
@@ -21,7 +23,6 @@
             top: -160px;
             left: 50%;
             transform: translate(-50%);
-            width: calc(100% - 30px);
             margin: 0;
             max-width: 863px;
         }
