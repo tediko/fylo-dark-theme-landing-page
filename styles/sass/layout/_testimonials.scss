@@ -1,5 +1,22 @@
 .testimonials {
+    $root: &;
     margin-bottom: 356px;
+
+    &.active {
+        #{$root}__card:first-child {
+            animation: slide-right 1000ms ease-in forwards;
+        }
+
+        #{$root}__card:nth-child(2) {
+            animation: slide-right 1000ms ease-in forwards;
+            animation-delay: 300ms;
+        }
+        
+        #{$root}__card:last-child {
+            animation: slide-right 1000ms ease-in forwards;
+            animation-delay: 600ms;
+        }
+    }
 
     &__container {
         display: grid;
@@ -25,6 +42,7 @@
         padding: 28px 21px;
         box-shadow: 5px 5px 13px rgba(255, 255, 255, 0.04);
         border-radius: 6px;
+        opacity: 0;
 
         @include breakpoint('lg') {
             padding: 30px 21px;

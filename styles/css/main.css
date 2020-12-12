@@ -843,6 +843,20 @@ a:focus, input:focus, button:focus {
   margin-bottom: 356px;
 }
 
+.testimonials.active .testimonials__card:first-child {
+  animation: slide-right 1000ms ease-in forwards;
+}
+
+.testimonials.active .testimonials__card:nth-child(2) {
+  animation: slide-right 1000ms ease-in forwards;
+  animation-delay: 300ms;
+}
+
+.testimonials.active .testimonials__card:last-child {
+  animation: slide-right 1000ms ease-in forwards;
+  animation-delay: 600ms;
+}
+
 .testimonials__container {
   display: grid;
   grid-template-columns: minmax(250px, 500px);
@@ -871,6 +885,7 @@ a:focus, input:focus, button:focus {
   padding: 28px 21px;
   box-shadow: 5px 5px 13px rgba(255, 255, 255, 0.04);
   border-radius: 6px;
+  opacity: 0;
 }
 
 @media (min-width: 1025px) {
