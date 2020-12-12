@@ -6,6 +6,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 25px 20px;
+        animation: header-slide 1000ms ease-in-out;
 
         @include breakpoint('sm') {
             padding-top: 40px;
