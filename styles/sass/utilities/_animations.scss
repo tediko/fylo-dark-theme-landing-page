@@ -1,3 +1,37 @@
+@keyframes header-slide {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes kv-pop {
+    0% {
+        transform: scale(0.8);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 @keyframes socials-shake {
     0% {
         transform: rotate(-10deg);
