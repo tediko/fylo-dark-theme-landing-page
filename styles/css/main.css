@@ -127,6 +127,38 @@
   }
 }
 
+@keyframes header-slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes kv-pop {
+  0% {
+    transform: scale(0.8);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @keyframes socials-shake {
   0% {
     transform: rotate(-10deg);
@@ -238,6 +270,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+a:focus, input:focus, button:focus {
+  outline-offset: 5px;
+  outline: 1px dashed rgba(101, 226, 217, 0.5);
+}
+
 .cta {
   position: relative;
   display: flex;
@@ -312,6 +349,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   align-items: center;
   padding: 25px 20px;
+  animation: header-slide 1000ms ease-in-out;
 }
 
 @media (min-width: 481px) {
@@ -450,6 +488,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   margin: 0 35px;
   padding-top: 21px;
+  animation: kv-pop 1000ms ease-in-out;
 }
 
 .kv__hero {
