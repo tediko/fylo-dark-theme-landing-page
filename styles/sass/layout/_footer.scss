@@ -1,5 +1,116 @@
 .footer {
+    $root: &;
+    position: relative;
     background: $bg-footer;
+
+    &__start {
+        position: absolute;
+        top: -208px;
+        margin: 0 30px;
+        padding: 46px 25px;
+        border-radius: 10px;
+        background: $bg-started;
+        text-align: center;
+
+        @include breakpoint('md') {
+            top: -160px;
+            left: 50%;
+            transform: translate(-50%);
+            width: calc(100% - 30px);
+            margin: 0;
+            max-width: 863px;
+        }
+    }
+
+    &__start-heading {
+        margin-bottom: 15px;
+
+        @include breakpoint('md') {
+            margin-bottom: 21px;
+        }
+    }
+
+    &__start-subheading {
+        margin-bottom: 15px;
+
+        @include breakpoint('sm') {
+            max-width: 690px;
+            margin: 0 auto;
+            margin-bottom: 39px;
+        }
+    }
+
+    &__start-form {
+        position: relative;
+
+        @include breakpoint('sm') {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+        @include breakpoint('md') {
+            justify-content: space-between;
+            max-width: 709px;
+            margin: 0 auto;
+        }
+
+        &.active {
+            #{$root}__start-error {
+                visibility: visible;
+                animation: error-shake 250ms ease-in;
+            }
+        }
+    }
+
+    &__start-input {
+        width: 100%;
+        border-radius: 30px;
+        border: none;
+        background: $c-white;
+        padding: 15px;
+        height: 48px;
+        margin-bottom: 30px;
+
+        @include breakpoint('sm') {
+            max-width: 550px;
+        }
+
+        @include breakpoint('md') {
+            max-width: 481px;
+            margin-bottom: 0px;
+            padding-left: 38px;
+        }
+
+        &::placeholder {
+            font-size: 0.9rem;
+            color: lighten(#000, 80);
+        }
+    }
+
+    &__start-error {
+        position: absolute;
+        visibility: hidden;
+        top: 54px;
+        left: 50%;
+        width: 100%;
+        color: $c-red-light;
+        transform: translate(-50%);
+        font-size: 0.8rem;
+        font-weight: 700;
+
+        @include breakpoint('md') {
+            left: 20px;
+            width: unset;
+            transform: none;
+        }
+    }
+
+    &__start-cta {
+        @include breakpoint('sm') {
+            max-width: 550px;
+        }
+    }
 
     &__container {
         padding-top: 201px;
