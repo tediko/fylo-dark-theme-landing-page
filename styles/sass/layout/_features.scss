@@ -29,6 +29,17 @@
         flex-flow: column;
         align-items: center;
         text-align: center;
+        opacity: 0;
+
+        &.active {
+            &:nth-child(odd) {
+                animation: slide-left 1000ms ease-in-out forwards;
+            }
+
+            &:nth-child(even) {
+                animation: slide-right 1000ms ease-in-out forwards;
+            }
+        }
     }
 
     &__card-icon {

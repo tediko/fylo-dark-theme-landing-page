@@ -183,6 +183,39 @@
   }
 }
 
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
 @font-face {
   font-family: 'icomoon';
   src: url("../../assets/fonts/icomoon.eot?f5idrr");
@@ -590,6 +623,15 @@ a:focus, input:focus, button:focus {
   flex-flow: column;
   align-items: center;
   text-align: center;
+  opacity: 0;
+}
+
+.features__card.active:nth-child(odd) {
+  animation: slide-left 1000ms ease-in-out forwards;
+}
+
+.features__card.active:nth-child(even) {
+  animation: slide-right 1000ms ease-in-out forwards;
 }
 
 .features__card-icon {
