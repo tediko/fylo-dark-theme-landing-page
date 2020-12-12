@@ -946,6 +946,11 @@ a:focus, input:focus, button:focus {
   border-radius: 10px;
   background: #1c2431;
   text-align: center;
+  opacity: 0;
+}
+
+.footer__start.active {
+  animation: slide-top 1000ms ease-in forwards;
 }
 
 @media (min-width: 769px) {

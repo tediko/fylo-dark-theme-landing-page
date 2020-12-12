@@ -11,6 +11,11 @@
         border-radius: 10px;
         background: $bg-started;
         text-align: center;
+        opacity: 0;
+
+        &.active {
+            animation: slide-top 1000ms ease-in forwards;
+        }
 
         @include breakpoint('md') {
             top: -160px;
