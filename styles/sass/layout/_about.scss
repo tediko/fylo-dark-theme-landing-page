@@ -30,7 +30,7 @@
     &__hero {
         margin-bottom: 38px;
         align-self: center;
-        opacity: 0;
+        /* opacity: 0; */
 
         @include breakpoint('md') {
             margin-bottom: 0;
@@ -49,7 +49,7 @@
     &__content {
         display: flex;
         flex-flow: column;
-        opacity: 0;
+        /* opacity: 0; */
 
         @include breakpoint('md') {
             justify-content: center;

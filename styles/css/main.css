@@ -623,7 +623,7 @@ a:focus, input:focus, button:focus {
   flex-flow: column;
   align-items: center;
   text-align: center;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .features__card.active:nth-child(odd) {
@@ -710,7 +710,7 @@ a:focus, input:focus, button:focus {
 .about__hero {
   margin-bottom: 38px;
   align-self: center;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 @media (min-width: 769px) {
@@ -733,7 +733,7 @@ a:focus, input:focus, button:focus {
 .about__content {
   display: flex;
   flex-flow: column;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 @media (min-width: 769px) {
@@ -885,7 +885,7 @@ a:focus, input:focus, button:focus {
   padding: 28px 21px;
   box-shadow: 5px 5px 13px rgba(255, 255, 255, 0.04);
   border-radius: 6px;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 @media (min-width: 1025px) {
@@ -948,7 +948,7 @@ a:focus, input:focus, button:focus {
   border-radius: 10px;
   background: #1c2431;
   text-align: center;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .footer__start.active {
