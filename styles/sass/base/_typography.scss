@@ -14,3 +14,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: $ff-secondary;
 }
+
+a, input, button {
+    &:focus {
+        outline-offset: 5px;
+        outline: 1px dashed transparentize($c-cyan, 0.5);
+    }
+}
