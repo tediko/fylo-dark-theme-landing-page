@@ -941,7 +941,9 @@ a:focus, input:focus, button:focus {
 .footer__start {
   position: absolute;
   top: -208px;
-  margin: 0 30px;
+  left: 50%;
+  transform: translate(-50%);
+  width: calc(100% - 30px);
   padding: 46px 25px;
   border-radius: 10px;
   background: #1c2431;
@@ -958,7 +960,6 @@ a:focus, input:focus, button:focus {
     top: -160px;
     left: 50%;
     transform: translate(-50%);
-    width: calc(100% - 30px);
     margin: 0;
     max-width: 863px;
   }
